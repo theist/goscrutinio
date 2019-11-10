@@ -83,7 +83,7 @@ func main() {
 
 	fmt.Print("Resultados Generales:\n\n")
 	fmt.Printf("Escrutado:    %v%%\n\n", jsonRes.PorcentajeCensoEscrutado)
-	fmt.Printf("Abstencion:   %v (%v%%)\n", jsonRes.Abstencion, jsonRes.PorcentajeAbstencion)
+	fmt.Printf("Abstención:   %v (%v%%)\n", jsonRes.Abstencion, jsonRes.PorcentajeAbstencion)
 	fmt.Printf("Voto Nulo:    %v (%v%%)\n", jsonRes.VotosNulos, jsonRes.PorcentajeVotosNulos)
 	fmt.Printf("Voto Blanco:  %v (%v%%)\n\n", jsonRes.VotosBlanco, jsonRes.PorcentajeVotosBlanco)
 
@@ -98,6 +98,6 @@ func main() {
 		if !allParties && party.Diputados < 1 {
 			continue
 		}
-		fmt.Printf("%26s: Escanos %3d, Votos: %15d(%3.2f%%)\n", party.Siglas, party.Diputados, party.Votos, party.PorcentajeVotos)
+		fmt.Printf("%26s: Escaños %3d, Votos: %15d(%3.2f%%)\n", party.Siglas, party.Diputados, party.Votos, party.PorcentajeVotos)
 	}
 }
